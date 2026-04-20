@@ -1,0 +1,134 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 8px 12px;
+  margin: 4px 4px;
+  border-radius: 6px;
+
+  font-family: sans-serif;
+  font-size: 14px;
+
+  border: 1px solid var(--border);
+  cursor: pointer;
+}
+
+/* Состояния */
+
+.btn--base {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.btn--hover {
+  background: var(--bg-hover);
+  color: var(--text);
+}
+
+.btn--active {
+  background: var(--bg-active);
+  color: var(--text);
+}
+
+.btn--disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  background: var(--bg-active);
+  color: var(--text);
+  border-color: #afafaf !important;
+}
+
+/* Цвета */
+
+.btn--default {
+  --bg: #EBEBEB;
+  --bg-hover: #f4f4f4;
+  --bg-active: #e1e1e1;
+  --text: #222;
+  --border: #afafaf;
+}
+
+.btn--red {
+  --bg: #ca130c;
+  --bg-hover: #e83029;
+  --bg-active: #d32f2f;
+  --text: white;
+  --border: #ca130c;
+}
+
+.btn--green {
+  --bg: #6e9735;
+  --bg-hover: #85b444;
+  --bg-active: #5e822b;
+  --text: white;
+  --border: #6e9735;
+}
+
+.btn--outlined {
+  background: transparent;
+  color: var(--border);
+  border-color: var(--border);
+}
+
+.btn--border-red {
+  border: 2px solid #dc241f;
+}
+
+.btn--border-green {
+  border: 2px solid #6e9735;
+}
+
+/* Графика / Иконки */
+.btn--arrow {
+  position: relative;
+  padding-right: 18px;
+}
+
+.btn--arrow::after {
+  content: "";
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 0;
+  height: 0;
+
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 6px solid #dc241f;
+}
+
+.icon {
+  width: 14px;
+  height: 14px;
+  transform: scale(1);
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.icon--edit {
+  background-image: url("../../assets/icons/edit-icon.svg");
+}
+
+.icon--export {
+  background-image: url("../../assets/icons/export-icon.svg");
+}
+
+.icon--arrow {
+  background-image: url("icons/arrow.svg");
+}
+
+.icon--delete {
+  background-image: url("../../assets/icons/delete-icon.svg");
+}
+
+.icon--print {
+  background-image: url("../../assets/icons/print-icon.svg");
+}
+
+.icon--upload {
+  background-image: url("../../assets/icons/upload-icon.svg");
+}

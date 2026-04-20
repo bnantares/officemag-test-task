@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Text Task - Scheme</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main class="main">
+        <div class="scheme__container">
+            <header class="header" style="top: 23px; left: 22px;">
+                <div class="header__text">Масоны Самсона</div>
+            </header>
+            <div class="item__container medium" style="top: 95px; left: 22px;">Алликсаар</div>
+
+            <div class="item__container big" style="top: 82px; left: 745px;">Ду Хаст Вячеславович</div>
+            <div class="item__container medium" style="top: 164px; left: 745px;">Анастасия Ширинкина</div>
+            <div class="item__container medium" style="top: 235px; left: 745px;">Александр Троян</div>
+            <div class="item__container medium" style="top: 388px; left: 745px;">Дмитрий Возингуй</div>
+            <div class="item__container medium" style="top: 449px; left: 745px;">Кристина Болтушкина</div>
+            <div class="item__container medium" style="top: 510px; left: 745px;">Максим Висюлькин</div>
+
+            <div class="item__container big" style="top: 228px; left: 142px;">Станислав Клитотехнис</div>
+            <div class="item__container medium" style="top: 636px; left: 142px;">Игорь Зверёк</div>
+            <div class="item__container medium" style="top: 697px; left: 142px;">Антон Строй</div>
+
+            <div class="item__container big" style="top: 310px; left: 262px;">Людмила Водолазская</div>
+            <div class="item__container medium" style="top: 392px; left: 262px;">Ольга Боргдорф</div>
+            <div class="item__container medium" style="top: 575px; left: 262px;">Сергей Брус</div>
+
+            <svg class="lines">
+                <line x1="222" y1="113" x2="745" y2="113" stroke="#aaaaaa" stroke-width="1"
+                    marker-start="url(#arrow-left)" />
+
+                <!-- Стрелка влево -->
+                <line x1="725" y1="113" x2="725" y2="183" stroke="#aaaaaa" stroke-width="1" />
+                <line x1="725" y1="183" x2="745" y2="183" stroke="#aaaaaa" stroke-width="1" />
+
+                <!-- Алликсаар большая вниз -->
+                <line x1="122" y1="136" x2="122" y2="717" stroke="#aaaaaa" stroke-width="1"
+                    marker-start="url(#arrow-left)" />
+
+                <!-- Вправо к Станиславу -->
+                <line x1="122" y1="259" x2="142" y2="259" stroke="#aaaaaa" stroke-width="1" />
+                <!-- Вправо к Игорю -->
+                <line x1="122" y1="657" x2="142" y2="657" stroke="#aaaaaa" stroke-width="1" />
+                <!-- Вправо к Антону -->
+                <line x1="122" y1="717" x2="142" y2="717" stroke="#aaaaaa" stroke-width="1" />
+                <!-- Большая от Станислава к Александру -->
+                <line x1="342" y1="255" x2="745" y2="255" stroke="#aaaaaa" stroke-width="1"
+                    marker-start="url(#arrow-left)" />
+
+                <!-- Станислав большая вниз -->
+                <line x1="242" y1="290" x2="242" y2="595" stroke="#aaaaaa" stroke-width="1"
+                    marker-start="url(#arrow-left)" />
+                <!-- Вправо к Людмиле -->
+                <line x1="242" y1="341" x2="262" y2="341" stroke="#aaaaaa" stroke-width="1" />
+                <!-- Вправо к Ольге -->
+                <line x1="242" y1="412" x2="262" y2="412" stroke="#aaaaaa" stroke-width="1" />
+                <!-- Вправо к Сергею -->
+                <line x1="242" y1="594" x2="262" y2="594" stroke="#aaaaaa" stroke-width="1" />
+
+                <!-- Большая вправо от Ольги к Дмитрию -->
+                <line x1="462" y1="410" x2="745" y2="410" stroke="#aaaaaa" stroke-width="1"
+                    marker-start="url(#arrow-left)" />
+                <!-- Вниз от Дмитрия слева -->
+                <line x1="725" y1="410" x2="725" y2="530" stroke="#aaaaaa" stroke-width="1" />
+                <!-- Справа к Максиму -->
+                <line x1="945" y1="530" x2="965" y2="530" stroke="#aaaaaa" stroke-width="1" />
+                <!-- Вниз от Дмитрия справа -->
+                <line x1="945" y1="410" x2="965" y2="410" stroke="#aaaaaa" stroke-width="1"
+                    marker-start="url(#arrow-left)" />
+                <line x1="965" y1="410" x2="965" y2="530" stroke="#aaaaaa" stroke-width="1" />
+                <!-- Слева к Кристине -->
+                <line x1="725" y1="470" x2="745" y2="470" stroke="#aaaaaa" stroke-width="1" />
+                <!-- Слева к Максиму -->
+                <line x1="725" y1="530" x2="745" y2="530" stroke="#aaaaaa" stroke-width="1" />
+
+                <defs>
+                    <!-- Стрелка влево - учитываем, что налево она смотрит относительно вектора, 
+                    поэтому если вектор идет вниз, стрелка будет смотреть наверх -->
+                    <marker id="arrow-left" markerWidth="24" markerHeight="24" refX="2" refY="12" orient="auto">
+                        <path d="M1,6L6,3L6,5L4,6L6,7L6,9Z" fill="#aaaaaa" transform="scale(2)" />
+                    </marker>
+                </defs>
+            </svg>
+
+        </div>
+    </main>
+</body>
+
+</html>

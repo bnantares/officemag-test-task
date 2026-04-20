@@ -1,0 +1,8 @@
+body {
+  background: #000 url("dam_i_lost_my_pineapplepen.jpg");
+  background-size: cover;
+}
+
+html, body {
+  height: 100%;
+}
